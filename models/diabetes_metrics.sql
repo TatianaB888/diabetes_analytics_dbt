@@ -1,6 +1,6 @@
 SELECT
     CASE
-        WHEN glucose > 140 THEN 'High Risk'
+        WHEN BLOOD_GLUCOSE_LEVEL > 140 THEN 'High Risk'
         ELSE 'Normal'
     END AS risk_level,
     COUNT(*) AS patient_count
