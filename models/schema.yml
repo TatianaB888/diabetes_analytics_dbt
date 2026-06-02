@@ -1,9 +1,15 @@
 
 version: 2
 
-sources:
-  - name: raw
-    database: DIABETES_ANALYTICS
-    schema: RAW
-    tables:
-      - name: patients
+models:
+  - name: patients_clean
+    columns:
+      - name: GENDER
+      - name: AGE
+      - name: HYPERTENSION
+      - name: HEART_DISEASE
+      - name: SMOKING_HISTORY
+      - name: BMI
+      - name: HBA1C_LEVEL
+      - name: BLOOD_GLUCOSE_LEVEL
+      - name: DIABETES

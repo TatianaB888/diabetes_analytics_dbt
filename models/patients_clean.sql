@@ -1,2 +1,11 @@
-SELECT *
-FROM {{ source('raw', 'patients') }}
+select
+    GENDER,
+    AGE,
+    HYPERTENSION,
+    HEART_DISEASE,
+    SMOKING_HISTORY,
+    BMI,
+    HBA1C_LEVEL,
+    BLOOD_GLUCOSE_LEVEL,
+    DIABETES
+from DIABETES_ANALYTICS.RAW.PATIENTS
